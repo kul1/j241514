@@ -10,7 +10,7 @@
   
 %div= @article.body.html_safe
 
-= social_share_button_tag(@article.title, :url => "#{request.original_url}") 
+= social_share_button_tag(@article.title, :url => "j241514.kul.space") 
 
 = link_to image_tag('pencil.png', style:'border:none; float:none;'), {controller: "mindapp", action: "init", s: 'articles:xedit_article', article_id: @article.id}, data: { confirm: "Please Confirm" }
 - @comments.each do |comment|
